@@ -17,6 +17,7 @@ machine_types         = "*"
 gnat_riscv64_elf      = "*"
 
 [[pins]]
+light_tasking_neorv32 = { url = "https://github.com/GNAT-Academic-Program/light_tasking_neorv32.git", branch = "main" }
 gpio_generic  = { url = "https://github.com/GNAT-Academic-Program/gpio_generic.git", branch = "main" }
 usart_generic = { url = "https://github.com/GNAT-Academic-Program/usart_generic.git", branch = "main" }
 machine_types = { url = "https://github.com/GNAT-Academic-Program/machine_types.git", branch = "main" }
