@@ -1,0 +1,22 @@
+name = "neorv32"
+description = "GHAL NEORV32 MCU drivers (GPIO, UART) for NEORV32 v1.13.6"
+version = "0.1.0-dev"
+
+authors = ["Olivier Henley"]
+maintainers = ["Olivier Henley <olivier.henley@gmail.com>"]
+maintainers-logins = ["ohenley"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = "https://github.com/GNAT-Academic-Program/neorv32_ghal"
+tags = ["embedded", "neorv32", "riscv", "bare-metal"]
+
+[[depends-on]]
+light_tasking_neorv32 = "*"
+gpio_generic          = "*"
+usart_generic         = "*"
+machine_types         = "*"
+gnat_riscv64_elf      = "*"
+
+[[pins]]
+gpio_generic  = { url = "https://github.com/GNAT-Academic-Program/gpio_generic.git", branch = "main" }
+usart_generic = { url = "https://github.com/GNAT-Academic-Program/usart_generic.git", branch = "main" }
+machine_types = { url = "https://github.com/GNAT-Academic-Program/machine_types.git", branch = "main" }
